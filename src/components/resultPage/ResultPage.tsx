@@ -102,7 +102,7 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
   };
 
   return (
-    <div className="w-full p-[16px] text-[#333333]">
+    <div className="w-full absolute top-0 left-0 right-0 z-10 bg-white p-[16px] text-[#333333]">
       <div className="max-w-[1000px] mx-auto">
         <div className="text-right flex items-center justify-between font-semibold p-4">
           <Link href="/">

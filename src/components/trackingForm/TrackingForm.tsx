@@ -19,9 +19,6 @@ export default function TrackingForm() {
     setTimeout(() => {
       setLoading(false);
       router.push(`/track?trackingNumber=${trackingNumber}`);
-      setTimeout(() => {
-        window.location.reload();
-      }, 500); // delay to ensure router.push completes
     }, 2000);
   };
 
