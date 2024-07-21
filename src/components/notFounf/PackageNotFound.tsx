@@ -10,7 +10,7 @@ export default function PackageNotFound() {
   return (
     <div>
       <Header />
-      <div className="bg-[#f2f2f2] py-6 pb-[80px]">
+      <div className="bg-[#f2f2f2] px-4 sm:px-0 py-6 pb-[80px]">
         <div className="mx-auto max-w-[600px]">
           <TrackingForm />
           <div className="rounded border mt-5 p-5 bg-white">Sorry, your tracking attempt was not successful. Please check your tracking number.</div>
