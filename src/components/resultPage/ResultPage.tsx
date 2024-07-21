@@ -16,7 +16,7 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
   const steps = useMemo(() => {
     const stepList = [
       {
-        label: "Package Received By Fedex",
+        label: "Package Received By DHL",
         datetime: `${packageInfo.package_received_date}T${packageInfo.package_received_time}`,
       },
       {

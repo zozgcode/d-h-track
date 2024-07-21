@@ -23,7 +23,7 @@ export const mockPackages: Package[] = [
         width: 20,
         height: 15,
       },
-      courier: 'Fedex',
+      courier: 'DHL',
       packages: 'Books',
       quantity: '1',
       paymentMode: 'Cash',
