@@ -24,6 +24,7 @@ export interface Package {
     courier: string;
     packages: string;
     mode: string;
+    typeOfShipment?: string;
     quantity: string;
     paymentMode: string;
     origin: string;
@@ -41,4 +42,6 @@ export interface Package {
   on_hold_time?: string;
   estimated_delivery_date: string;
   estimated_delivery_time: string;
+  pickup_date?: string;
+  pickup_time?: string;
 }

@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaUser } from "react-icons/fa";
 import { FaArrowDownShortWide } from "react-icons/fa6";
-import logo from "../../assets/dhl-logo.svg"
+import logo from "../../assets/dhl-logo.svg";
 
 interface ResultPageProps {
   packageInfo: Package;
@@ -97,7 +97,7 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
       case 3:
         return "Delivered";
       default:
-        return "Unknown";
+        return "Processing";
     }
   };
 
@@ -283,14 +283,14 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
               <div className="bg-white flex items-center justify-between">
                 <div className="w-full p-3 py-2 border-r">Pickup Date</div>
                 <div className="w-full p-3 py-2">
-                  {formatDate(packageInfo.package_received_date)}
+                  {formatDate(packageInfo.pickup_date ?? "")}
                 </div>
               </div>
               <div className="bg-[#858585] text-white flex items-center justify-between">
                 <div className="w-full p-3 py-2 border-r">Pickup Time</div>
                 <div className="w-full p-3 py-2">
                   {formatTime(
-                    `${packageInfo.package_received_date}T${packageInfo.package_received_time}`
+                    `${packageInfo.pickup_date}T${packageInfo.pickup_time}`
                   )}
                 </div>
               </div>
