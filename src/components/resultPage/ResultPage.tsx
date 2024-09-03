@@ -120,12 +120,16 @@ export default function ResultPage({ packageInfo }: ResultPageProps) {
                 <div className="circle"></div>
                 <div className="content">
                   <p className="label text-base font-semibold uppercase">{step.label}</p>
-                  {index <= currentStep && (
+                  <p className="text-sm flex flex-col mt-1">
+                    {formatDate(step.datetime)}
+                    <span className="text-[13px]">{formatTime(step.datetime)}</span>
+                  </p>
+                  {/* {index <= currentStep && (
                     <p className="text-sm flex flex-col mt-1">
                       {formatDate(step.datetime)}
                       <span className="text-[13px]">{formatTime(step.datetime)}</span>
                     </p>
-                  )}
+                  )} */}
                 </div>
               </div>
             ))}
